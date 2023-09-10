@@ -21,6 +21,9 @@ dependencies:
   '@iot-app-kit/source-iottwinmaker':
     specifier: ^6.3.1
     version: 6.3.1
+  '@matterport/webcomponent':
+    specifier: 0.1.26
+    version: 0.1.26(three@0.146.0)
   autoprefixer:
     specifier: 10.4.15
     version: 10.4.15(postcss@8.4.29)
@@ -42,11 +45,11 @@ dependencies:
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
+  three:
+    specifier: 0.146.0
+    version: 0.146.0
 
 devDependencies:
-  '@matterport/webcomponent':
-    specifier: 0.1.26
-    version: 0.1.26(three@0.146.0)
   '@types/node':
     specifier: 20.6.0
     version: 20.6.0
@@ -65,9 +68,6 @@ devDependencies:
   sass:
     specifier: ^1.66.1
     version: 1.66.1
-  three:
-    specifier: 0.146.0
-    version: 0.146.0
   typescript:
     specifier: 5.2.2
     version: 5.2.2
@@ -3148,11 +3148,13 @@ packages:
 
   /@lit-labs/ssr-dom-shim@1.1.1:
     resolution: {integrity: sha512-kXOeFbfCm4fFf2A3WwVEeQj55tMZa8c8/f9AKHMobQMkzNUfUj+antR3fRPaZJawsa1aZiP/Da3ndpZrwEe4rQ==}
+    dev: false
 
   /@lit/reactive-element@1.6.3:
     resolution: {integrity: sha512-QuTgnG52Poic7uM1AN5yJ09QMe0O28e10XzSvWDz02TJiiKee4stsiownEIadWm8nYzyDAyT+gKzUoZmiWQtsQ==}
     dependencies:
       '@lit-labs/ssr-dom-shim': 1.1.1
+    dev: false
 
   /@matterport/r3f@0.2.7(@matterport/webcomponent@0.1.26)(@react-three/fiber@8.14.1)(react-dom@18.2.0)(react@18.2.0)(three@0.146.0):
     resolution: {integrity: sha512-vw8dJNvYq3DvCff+bk5USvVDtObbJShsTSc7leo5FpG5/9BLejZ4quGbhIDxG9ndQhQe2th2boTfUCv4OxdU7A==}
@@ -3181,6 +3183,7 @@ packages:
     dependencies:
       lit: 2.8.0
       three: 0.146.0
+    dev: false
 
   /@next/env@13.4.19:
     resolution: {integrity: sha512-FsAT5x0jF2kkhNkKkukhsyYOrRqtSxrEhfliniIq0bwWbuXLgyt3Gv0Ml+b91XwjwArmuP7NxCiGd++GGKdNMQ==}
@@ -3867,6 +3870,7 @@ packages:
 
   /@types/trusted-types@2.0.3:
     resolution: {integrity: sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g==}
+    dev: false
 
   /@types/unist@2.0.8:
     resolution: {integrity: sha512-d0XxK3YTObnWVp6rZuev3c49+j4Lo8g4L1ZRm9z5L0xpoZycUPshHgczK5gsUMaZOstjVYYi09p5gYvUtfChYw==}
@@ -6143,11 +6147,13 @@ packages:
       '@lit-labs/ssr-dom-shim': 1.1.1
       '@lit/reactive-element': 1.6.3
       lit-html: 2.8.0
+    dev: false
 
   /lit-html@2.8.0:
     resolution: {integrity: sha512-o9t+MQM3P4y7M7yNzqAyjp7z+mQGa4NS4CxiyLqFPyFWyc4O+nodLrkrxSaCTrla6M5YOLaT3RpbbqjszB5g3Q==}
     dependencies:
       '@types/trusted-types': 2.0.3
+    dev: false
 
   /lit@2.8.0:
     resolution: {integrity: sha512-4Sc3OFX9QHOJaHbmTMk28SYgVxLN3ePDjg7hofEft2zWlehFL3LiAuapWc4U/kYwMYJSh2hTCPZ6/LIC7ii0MA==}
@@ -6155,6 +6161,7 @@ packages:
       '@lit/reactive-element': 1.6.3
       lit-element: 3.3.3
       lit-html: 2.8.0
+    dev: false
 
   /loader-runner@4.3.0:
     resolution: {integrity: sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==}
@@ -7816,6 +7823,7 @@ packages:
 
   /three@0.146.0:
     resolution: {integrity: sha512-1lvNfLezN6OJ9NaFAhfX4sm5e9YCzHtaRgZ1+B4C+Hv6TibRMsuBAM5/wVKzxjpYIlMymvgsHEFrrigEfXnb2A==}
+    dev: false
 
   /tiny-inflate@1.0.3:
     resolution: {integrity: sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==}
