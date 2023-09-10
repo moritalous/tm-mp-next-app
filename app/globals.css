@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.tm-html-wrapper div{
+
+  width: 300px !important;
+
+}
+
+.tm-html-wrapper element{
+
+  width: 600px !important;
+
+}

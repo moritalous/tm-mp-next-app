@@ -6,20 +6,43 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npx matterport-assets ./public/matterport"
   },
   "dependencies": {
-    "@types/node": "20.6.0",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
+    "@iot-app-kit/core": "^6.3.1",
+    "@iot-app-kit/react-components": "^6.3.1",
+    "@iot-app-kit/scene-composer": "^6.3.1",
+    "@iot-app-kit/source-iottwinmaker": "^6.3.1",
     "autoprefixer": "10.4.15",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.4.19",
+    "encoding": "^0.1.13",
     "next": "13.4.19",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "@types/node": "20.6.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "sass": "^1.66.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.88.2",
+    "typescript": "5.2.2",
+    "three": "0.146.0",
+    "@matterport/webcomponent": "0.1.26"
+  },
+  "overrides": {
+    "three": "0.146.0",
+    "@matterport/webcomponent": "0.1.26"
+  },
+  "pnpm": {
+    "overrides": {
+      "three": "0.146.0",
+      "@matterport/webcomponent": "0.1.26"
+    }
   }
 }
