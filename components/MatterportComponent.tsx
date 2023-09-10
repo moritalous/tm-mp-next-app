@@ -119,6 +119,13 @@ const MatterportComponent = () => {
           // The path will be used to set the value later.
           const ambientIntensityPath = sceneObject.addInputPath(directionalLightComponet, 'intensity', 'ambientIntensity');
 
+          const ControlNode = sceneObject.addNode();
+          const myControl = ControlNode.addComponent('mp.transformControls', {
+            visible: true,
+            mode: 'translate',
+            selection: gltfNode,
+          });
+
           // Start the scene object and its nodes.
           sceneObject.start();
         }
@@ -129,7 +136,7 @@ const MatterportComponent = () => {
 
   return (
     <>
-      <div style={{ position: 'absolute', left: '804px' }}>
+      <div style={{ position: 'absolute', left: '1290px' }}>
         <button onClick={add}>追加</button>
         <br></br>
         X: <input type='number' step={0.1} value={x} onChange={(e) => setX((Number)(e.target.value))}></input>

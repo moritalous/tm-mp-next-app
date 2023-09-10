@@ -33,7 +33,7 @@ const TwinMakerScene = () => {
     <>
       {twinMakerData ? (
         <div>
-          <div style={{ width: '800px' }}>
+          <div>
             <SceneViewer
               sceneLoader={twinMakerData.s3SceneLoader(sceneId)}
               sceneMetadataModule={twinMakerData.sceneMetadataModule(sceneId)}
